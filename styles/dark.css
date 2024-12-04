@@ -16,100 +16,100 @@
   --main-font: 'IBM Plex Mono', sans-serif;
   --bg-img: url('../images/cover-image-dark.png');
 
-  .page { 
-    font-family: var(--main-font);
-    font-size: 18px;
-    background-image: var(--bg-img);
-    background-position: top center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
+    .page { 
+      font-family: var(--main-font);
+      font-size: 18px;
+      background-image: var(--bg-img);
+      background-position: top center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
   
-  .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:  repeat(3, min-content);
-    justify-content: center;
-    align-items: center;
-    margin-block-end: 40px;
-    padding-inline: 10px;
-    padding-block: 10px;
-    inline-size: 100%;
-    min-block-size: 100vh;
-  }
+   .header {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+      grid-template-rows:  repeat(3, min-content);
+     justify-content: center;
+     align-items: center;
+     margin-block-end: 40px;
+     padding-inline: 10px;
+     padding-block: 10px;
+     inline-size: 100%;
+     min-block-size: 100vh;
+   }
+
+   .decorated-zone {
+     position: relative;
+    }
   
-  .decorated-zone {
-    position: relative;
-  }
+    .decorated-zone::before {
+      content: '';
+      grid-column: 2;
+      grid-row: 1;
+      justify-self: end;
+      border-inline-end: 1px solid var(--accent-color);
+      border-block-start: 1px solid var(--accent-color);
+      inline-size: 25px;
+      block-size: 25px;
+    }
   
-  .decorated-zone::before {
-    content: '';
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: end;
-    border-inline-end: 1px solid var(--accent-color);
-    border-block-start: 1px solid var(--accent-color);
-    inline-size: 25px;
-    block-size: 25px;
-  }
+    .decorated-zone::after {
+      content: '';
+      grid-row: 5;
+      border-inline-start: 1px solid var(--accent-color);
+      border-block-end: 1px solid var(--accent-color);
+      inline-size: 25px;
+      block-size: 25px;
+    }
   
-  .decorated-zone::after {
-    content: '';
-    grid-row: 5;
-    border-inline-start: 1px solid var(--accent-color);
-    border-block-end: 1px solid var(--accent-color);
-    inline-size: 25px;
-    block-size: 25px;
-  }
+    .inscription {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: var(--accent-color);
+    }
   
-  .inscription {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: var(--accent-color);
-  }
+    .inscription::after {
+      content: '';
+      display: inline-block;
+      margin-inline: 10px 5px;
+      border-radius: 100%;
+      box-shadow: 0 0 4px 2px var(--accent-color);
+      fill: var(--accent-color);
+      background-color: var(--accent-color);
+      inline-size: 9px;
+      block-size: 9px;
+    }
   
-  .inscription::after {
-    content: '';
-    display: inline-block;
-    margin-inline: 10px 5px;
-    border-radius: 100%;
-    box-shadow: 0 0 4px 2px var(--accent-color);
-    fill: var(--accent-color);
-    background-color: var(--accent-color);
-    inline-size: 9px;
-    block-size: 9px;
-  }
+    .header__theme-menu {
+      grid-column: 2;
+      grid-row: 2;
+      justify-self: end;
+      padding-block-start: 40px;
+      padding-block-end: 68px;
+    }
   
-  .header__theme-menu {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: end;
-    padding-block-start: 40px;
-    padding-block-end: 68px;
-  }
+    .header__theme-menu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
   
-  .header__theme-menu-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  
-  .title {
-    grid-column: span 2;
-    grid-row: 3;
-    color: var(--h-f-text-color);
-    font-weight: 700;
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    line-height: 83%;
-    text-shadow: 4px 4px 0 var(--accent-color);
-  }
+    .title {
+      grid-column: span 2;
+      grid-row: 3;
+      color: var(--h-f-text-color);
+      font-weight: 700;
+      font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+      line-height: 83%;
+      text-shadow: 4px 4px 0 var(--accent-color);
+    }
   
   
-  .title-decor {
-    color: var(--header-text-color);
-    background-color: var(--accent-color);
-  }
+    .title-decor {
+     color: var(--header-text-color);
+      background-color: var(--accent-color);
+    }
   
   .header_subtitle {
     grid-column: span 2;
