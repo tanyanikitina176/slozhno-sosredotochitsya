@@ -39,4 +39,6 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  border-style: none;
+  outline-offset: 0;
 }
