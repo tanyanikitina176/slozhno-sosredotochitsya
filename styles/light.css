@@ -9,7 +9,6 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --accent-color:  #ff0070;
   --header-color: #ffc2e6;
   --footer-color: var(--header-color);
   --text-color: #353430;
@@ -146,13 +145,13 @@
     line-height: 130%;
   }
   
-  .p_title {
+  .subtitle {
     margin-block-end: 10px;
     font-size: inherit;
     line-height: 130%;
   }
   
-  .p_text {
+  .subtitle_text {
     color: var(--text-color);
     font-weight: 400;
     font-size: inherit;
@@ -163,7 +162,7 @@
     margin-block-end: 20px;
   }
   
-  .section_how_content .p_text:not(:last-child) {
+  .section_how_content .subtitle_text:not(:last-child) {
     margin-block-end: 20px;
   }
   
@@ -207,7 +206,7 @@
     line-height: 130%;
   }
   
-  .p_title:has(+.text_title) {
+  .subtitle:has(+.text_title) {
     margin-block-end: 20px;
   }
   
@@ -222,7 +221,7 @@
     gap: 10px;
   }
   
-  .p_title:has(+.gallery_img) {
+  .subtitle:has(+.gallery_img) {
     margin-block-end: 0;
   }
   
@@ -348,7 +347,7 @@
       padding-inline: 20px;
     }
   
-    .section_gallery .p_title {
+    .section_gallery .subtitle {
       margin-block-end: 20px;
     }
   
@@ -441,7 +440,6 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --accent-color:  #ff0070;
     --header-color: #ffc2e6;
     --footer-color: var(--header-color);
     --text-color: #353430;
@@ -578,13 +576,13 @@
     line-height: 130%;
   }
   
-  .p_title {
+  .subtitle {
     margin-block-end: 10px;
     font-size: inherit;
     line-height: 130%;
   }
   
-  .p_text {
+  .subtitle_text {
     color: var(--text-color);
     font-weight: 400;
     font-size: inherit;
@@ -595,7 +593,7 @@
     margin-block-end: 20px;
   }
   
-  .section_how_content .p_text:not(:last-child) {
+  .section_how_content .subtitle_text:not(:last-child) {
     margin-block-end: 20px;
   }
   
@@ -639,7 +637,7 @@
     line-height: 130%;
   }
   
-  .p_title:has(+.text_title) {
+  .subtitle:has(+.text_title) {
     margin-block-end: 20px;
   }
   
@@ -654,7 +652,7 @@
     gap: 10px;
   }
   
-  .p_title:has(+.gallery_img) {
+  .subtitle:has(+.gallery_img) {
     margin-block-end: 0;
   }
   
@@ -780,7 +778,7 @@
       padding-inline: 20px;
     }
   
-    .section_gallery .p_title {
+    .section_gallery .subtitle {
       margin-block-end: 20px;
     }
   
