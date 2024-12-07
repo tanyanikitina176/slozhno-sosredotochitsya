@@ -20,7 +20,7 @@
   --bg-color: #FF8DCB;
   --link-shadow: var(--bg-color);
   --link-focus: var(--text-color);
-  --link-hover: var(--text-color);
+  --link-hover: rgba(50, 49, 45, 0.4);
   --menu-btn-color-focus: var(--text-color);
   --bg-img: url('../images/cover-image-light.png');
   --page-bg-color: #fff1f7; 
@@ -45,7 +45,7 @@
     --bg-color: #FF8DCB;
     --link-shadow: var(--bg-color);
     --link-focus: var(--text-color);
-    --link-hover: var(--text-color);
+    --link-hover: rgba(50, 49, 45, 0.4);
     --menu-btn-color-focus: var(--text-color);
     --bg-img: url('../images/cover-image-light.png');
     --page-bg-color: #fff1f7; 

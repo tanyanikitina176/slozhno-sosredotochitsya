@@ -21,7 +21,7 @@
   --link-shadow: var(--accent-color);
   --text-color: #F1B2CE;
   --link-focus: var(--text-color);
-  --link-hover: var(--accent-color);
+  --link-hover: rgba(255, 0, 112, 0.4);
   --menu-btn-color-focus: var(--accent-color);
   --bg-img: url('../images/cover-image-dark.png');
   --page-bg-color: var(--header-text-color);
@@ -34,25 +34,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --accent-color: #ff0070;
-    --decorated-zone: var(--accent-color);
-    --menu-btn-color: var(--accent-color);
-    --header-color: #DB00FF;
-    --title-decor-color: var(--accent-color);
-    --title-decor-text-color: var(--header-text-color);
-    --main-title-color: var(--accent-color);
-    --footer-color: var(--header-color);
-    --header-text-color: #000028;
-    --link-shadow: var(--accent-color);
-    --text-color: #F1B2CE;
-    --link-focus: var(--text-color);
-    --link-hover: var(--accent-color);
-    --menu-btn-color-focus: var(--accent-color);
-    --bg-img: url('../images/cover-image-dark.png');
-    --page-bg-color: var(--header-text-color);
-  }
-
+ 
   .page {
     background-color: var(--page-bg-color);
     background-image: var(--bg-img);

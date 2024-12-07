@@ -15,7 +15,7 @@
   --link-shadow: var(--accent-color);
   --text-color: #F1B2CE;
   --link-focus: var(--text-color);
-  --link-hover: var(--accent-color);
+  --link-hover: rgba(255, 0, 112, 0.4);
   --menu-btn-color-focus: var(--accent-color);
   --main-font: 'IBM Plex Mono', monospace;
   --bg-img: url('../images/cover-image-dark.png');
